@@ -1,0 +1,60 @@
+events:
+  game_ended: 4
+  game_started: 48
+player:
+  score:
+    average: 42500.0
+    top:
+    - 62000
+    - 61000
+    - 47000
+    - 0
+    total: 4
+shots:
+  topRollover2_skillshot: 6
+  topRollover3_skillshot: 8
+switches:
+  s_1_target: 1
+  s_2_target: 30
+  s_3_target: 26
+  s_4_target: 29
+  s_a_drop_target: 0
+  s_a_rollover: 12
+  s_b_rollover: 29
+  s_bottom_bumper: 35
+  s_bottom_bumper_spe: 36
+  s_c_rollover: 18
+  s_d_rollover: 0
+  s_e_rollover: 0
+  s_eject_hole: 28
+  s_g2_drop_target: 0
+  s_g_drop_target: 0
+  s_gar_drop_targets_series: 0
+  s_gar_drop_targets_standup: 1
+  s_gor_drop_target_Standup: 4
+  s_gor_drop_targets_series: 0
+  s_left_bumper: 40
+  s_left_bumper_spe: 38
+  s_left_flipper: 129
+  s_left_kicker: 28
+  s_left_outlane: 5
+  s_left_sling_spe: 15
+  s_lower_left_standup: 1
+  s_magnet_switch: 0
+  s_middle_left_standup: 0
+  s_middle_lower_standup: 4
+  s_middle_upper_standup: 1
+  s_o_drop_target: 0
+  s_outhole: 68
+  s_playfield_tilt: 0
+  s_r2_drop_target: 0
+  s_r_drop_target: 0
+  s_right_bumper_spe: 102
+  s_right_flipper: 87
+  s_right_kicker: 64
+  s_right_outlane: 20
+  s_right_sling_spe: 31
+  s_spinner: 28
+  s_startButton: 7
+  s_top_bumper: 59
+  s_upper_left_standup: 2

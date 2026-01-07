@@ -1,0 +1,7 @@
+#config_version=6
+slide_player:
+  mode_attract_started: attract
+sound_player:
+  mode_attract_started: 
+    slowlife:
+      bus:  music

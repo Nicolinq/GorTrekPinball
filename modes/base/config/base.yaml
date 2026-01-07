@@ -1,0 +1,75 @@
+#config_version=6
+
+mode:
+  start_events: ball_started
+  priority: 100
+
+variable_player:
+   s_left_outlane_active:
+      score: 1000
+   s_d_rollover_active:
+      score: 1000
+   s_left_kicker_active:
+      score: 1000
+   s_lower_left_standup_active:
+      score: 1000
+   s_1_target_active:
+      score: 1000
+   s_eject_hole_active:
+      score: 1000
+   s_middle_left_standup_active:
+      score: 1000
+   s_upper_left_standup_active:
+      score: 1000
+   s_g_drop_target_active:
+      score: 1000
+   s_o_drop_target_active:
+      score: 1000
+   s_r_drop_target_active:
+      score: 1000
+   s_gor_drop_targets_series_active:
+      score: 1000
+   s_gor_drop_target_Standup_active:
+      score: 1000
+   s_magnet_switch_active:
+      score: 1000
+   s_middle_lower_standup_active:
+      score: 1000
+   s_middle_upper_standup_active:
+      score: 1000
+   s_a_rollover_active:
+      score: 1000
+   s_b_rollover_active:
+      score: 1000
+   s_c_rollover_active:
+      score: 1000
+   s_spinner_active:
+      score: 1000
+   s_2_target_active:
+      score: 1000
+   s_3_target_active:
+      score: 1000
+   s_4_target_active:
+      score: 1000
+   s_right_outlane_active:
+      score: 1000
+   s_e_rollover_active:
+      score: 1000
+   s_right_kicker_active:
+      score: 1000
+   s_left_bumper_active:
+      score: 1000
+   s_top_bumper_active:
+      score: 1000
+   s_bottom_bumper_active:
+      score: 1000
+   s_gar_drop_targets_standup_active:
+      score: 1000
+   s_g2_drop_target_active:
+      score: 1000
+   s_a_drop_target_active:
+      score: 1000
+   s_r2_drop_target_active:
+      score: 1000
+   s_gar_drop_targets_series_active:
+      score: 1000

@@ -1,0 +1,28 @@
+[gd_scene load_steps=2 format=3 uid="uid://dvlxywrlhywpm"]
+
+[ext_resource type="Script" uid="uid://dru3usokwlhd3" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_r1mnt"]
+
+[node name="Attract" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_r1mnt")
+metadata/_custom_type_script = "uid://dru3usokwlhd3"
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = -111.0
+offset_top = -88.0
+offset_right = 1169.0
+offset_bottom = 936.0
+color = Color(0.4627451, 0.14509805, 0.3647059, 1)
+
+[node name="Label" type="Label" parent="ColorRect"]
+layout_mode = 0
+offset_left = 349.0
+offset_top = 446.0
+offset_right = 989.0
+offset_bottom = 557.0
+theme_override_font_sizes/font_size = 80
+text = "GorTrek Pinball !"
+horizontal_alignment = 1
+vertical_alignment = 1
