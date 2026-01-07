@@ -59,6 +59,7 @@ coils:
         default_pulse_ms: 35
         
 switches:
+    #Cabinet Switches
    s_startButton:
       number: 0-0-16
       tags: start
@@ -69,6 +70,7 @@ switches:
    s_right_flipper:
       number: 0-0-18
       tags: right_flipper
+    #Rapid Switches
    s_right_sling_spe:
       number: 0-0-27
    s_left_sling_spe:
@@ -82,8 +84,10 @@ switches:
    s_bottom_bumper_spe:
       number: 0-0-19            
       tags: pops
+    #Trough Switches
    s_outhole:
       number: 1-0-40
+    #Playfield Switches
    s_left_outlane:
       number: 1-0-41
    s_d_rollover:
@@ -448,7 +452,7 @@ ball_devices:
         eject_coil: c_left_saucer
         eject_timeouts: 1s
         entrance_count_delay: 900ms
-        
+            
 playfields:
   playfield:
     tags: default
