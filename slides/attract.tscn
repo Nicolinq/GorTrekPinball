@@ -26,6 +26,7 @@ carousel_name = "attract"
 metadata/_custom_type_script = "uid://dpe3dq8axt3g7"
 
 [node name="credits" type="Label" parent="MPFCarousel"]
+visible = false
 layout_mode = 0
 offset_right = 1280.0
 offset_bottom = 1020.0
@@ -39,6 +40,7 @@ variable_name = "credits_string"
 metadata/_custom_type_script = "uid://bfvhmv2eirpua"
 
 [node name="title" type="Label" parent="MPFCarousel"]
+visible = false
 layout_mode = 0
 offset_left = 4.0
 offset_top = 5.0
@@ -50,5 +52,177 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="mpf_logo" type="Sprite2D" parent="MPFCarousel"]
+visible = false
 position = Vector2(634, 523)
 texture = ExtResource("4_f161n")
+
+[node name="last_scores_1p" type="Node2D" parent="MPFCarousel"]
+visible = false
+
+[node name="player1_score" type="Label" parent="MPFCarousel/last_scores_1p"]
+offset_left = 8.0
+offset_top = 4.0
+offset_right = 1271.0
+offset_bottom = 1020.0
+theme_override_font_sizes/font_size = 80
+text = "123,456	"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("3_hhxni")
+variable_type = 2
+variable_name = "player1_score"
+comma_separate = true
+min_digits = 2
+metadata/_custom_type_script = "uid://bfvhmv2eirpua"
+
+[node name="last_scores_2p" type="Node2D" parent="MPFCarousel"]
+visible = false
+
+[node name="player1_score" type="Label" parent="MPFCarousel/last_scores_2p"]
+offset_left = 8.0
+offset_top = 4.0
+offset_right = 1271.0
+offset_bottom = 519.0
+theme_override_font_sizes/font_size = 80
+text = "123,456	"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("3_hhxni")
+variable_type = 2
+variable_name = "player1_score"
+comma_separate = true
+min_digits = 2
+metadata/_custom_type_script = "uid://bfvhmv2eirpua"
+
+[node name="player2_score" type="Label" parent="MPFCarousel/last_scores_2p"]
+offset_left = 8.0
+offset_top = 521.0
+offset_right = 1271.0
+offset_bottom = 1020.0
+theme_override_font_sizes/font_size = 80
+text = "123,456	"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("3_hhxni")
+variable_type = 2
+variable_name = "player2_score"
+comma_separate = true
+min_digits = 2
+metadata/_custom_type_script = "uid://bfvhmv2eirpua"
+
+[node name="last_scores_3p" type="Node2D" parent="MPFCarousel"]
+visible = false
+
+[node name="player1_score" type="Label" parent="MPFCarousel/last_scores_3p"]
+offset_left = 8.0
+offset_top = 4.0
+offset_right = 672.0
+offset_bottom = 519.0
+theme_override_font_sizes/font_size = 80
+text = "123,456	"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("3_hhxni")
+variable_type = 2
+variable_name = "player1_score"
+comma_separate = true
+min_digits = 2
+metadata/_custom_type_script = "uid://bfvhmv2eirpua"
+
+[node name="player2_score" type="Label" parent="MPFCarousel/last_scores_3p"]
+offset_left = 667.0
+offset_top = 4.0
+offset_right = 1271.0
+offset_bottom = 517.0
+theme_override_font_sizes/font_size = 80
+text = "123,456	"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("3_hhxni")
+variable_type = 2
+variable_name = "player2_score"
+comma_separate = true
+min_digits = 2
+metadata/_custom_type_script = "uid://bfvhmv2eirpua"
+
+[node name="player3_score" type="Label" parent="MPFCarousel/last_scores_3p"]
+offset_left = 8.0
+offset_top = 521.0
+offset_right = 672.0
+offset_bottom = 1020.0
+theme_override_font_sizes/font_size = 80
+text = "123,456	"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("3_hhxni")
+variable_type = 2
+variable_name = "player3_score"
+comma_separate = true
+min_digits = 2
+metadata/_custom_type_script = "uid://bfvhmv2eirpua"
+
+[node name="last_scores_4p" type="Node2D" parent="MPFCarousel"]
+
+[node name="player1_score" type="Label" parent="MPFCarousel/last_scores_4p"]
+offset_left = 8.0
+offset_top = 4.0
+offset_right = 672.0
+offset_bottom = 519.0
+theme_override_font_sizes/font_size = 80
+text = "123,456	"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("3_hhxni")
+variable_type = 2
+variable_name = "player1_score"
+comma_separate = true
+min_digits = 2
+metadata/_custom_type_script = "uid://bfvhmv2eirpua"
+
+[node name="player2_score" type="Label" parent="MPFCarousel/last_scores_4p"]
+offset_left = 667.0
+offset_top = 4.0
+offset_right = 1271.0
+offset_bottom = 517.0
+theme_override_font_sizes/font_size = 80
+text = "123,456	"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("3_hhxni")
+variable_type = 2
+variable_name = "player2_score"
+comma_separate = true
+min_digits = 2
+metadata/_custom_type_script = "uid://bfvhmv2eirpua"
+
+[node name="player3_score" type="Label" parent="MPFCarousel/last_scores_4p"]
+offset_left = 8.0
+offset_top = 521.0
+offset_right = 672.0
+offset_bottom = 1020.0
+theme_override_font_sizes/font_size = 80
+text = "123,456	"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("3_hhxni")
+variable_type = 2
+variable_name = "player3_score"
+comma_separate = true
+min_digits = 2
+metadata/_custom_type_script = "uid://bfvhmv2eirpua"
+
+[node name="player4_score" type="Label" parent="MPFCarousel/last_scores_4p"]
+offset_left = 666.0
+offset_top = 522.0
+offset_right = 1280.0
+offset_bottom = 1021.0
+theme_override_font_sizes/font_size = 80
+text = "123,456	"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("3_hhxni")
+variable_type = 2
+variable_name = "player4_score"
+comma_separate = true
+min_digits = 2
+metadata/_custom_type_script = "uid://bfvhmv2eirpua"
