@@ -5,6 +5,16 @@ mode:
   stop_events: ball_will_end
   priority: 100
 
+event_player:
+   mode_base_started:
+      - start_mode_bumpers
+   mode_base_will_stop:
+      - stop_mode_bumpers
+
+slide_player:
+   mode_base_started: base_slide
+   
+
 variable_player:
    s_left_outlane_active:
       score: 1000
@@ -57,12 +67,6 @@ variable_player:
    s_e_rollover_active:
       score: 1000
    s_right_kicker_active:
-      score: 1000
-   s_left_bumper_active:
-      score: 1000
-   s_top_bumper_active:
-      score: 1000
-   s_bottom_bumper_active:
       score: 1000
    s_gar_drop_targets_standup_active:
       score: 1000

@@ -461,7 +461,10 @@ playfields:
     ball_search_timeout: 45s
     ball_search_wait_after_iteration: 30s
     ball_search_interval: 250ms
-    
+
+virtual_platform_start_active_switches:
+    - s_outhole
+
 machine:
     balls_installed: 1
 
