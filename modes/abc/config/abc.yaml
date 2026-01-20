@@ -1,0 +1,77 @@
+#config_version=6
+
+mode:
+  start_events: start_mode_abc
+  stop_events: stop_mode_abc
+  priority: 200
+
+counters:
+  abc_lanes_complete_count:
+    count_events: abc_lanes_shots_hit_complete
+    events_when_hit: abc_lanes_shots_done
+    starting_count: 1
+    direction: up
+    persist_state: false
+
+shot_profiles:
+  abc_lanes_profile:
+    states:
+      - name:
+        show: off
+      - name: hit
+        show: on
+
+shots:
+  a_lane:
+    switch: s_a_rollover
+    profile: abc_lanes_profile
+    show_tokens:
+      led: l_Led_A
+  b_lane:
+    switch: s_b_rollover
+    profile: abc_lanes_profile
+    show_tokens:
+      led: l_Led_B
+  c_lane:
+    switch: s_c_rollover
+    profile: abc_lanes_profile
+    show_tokens:
+      led: l_Led_C
+
+shot_groups:
+  abc_lanes_shots:
+    shots: a_lane,b_lane,c_lane
+    reset_events: abc_lanes_shots_hit_complete
+    rotate_left_events: s_flipper_left_active
+    rotate_right_events: s_flipper_right_active
+
+
+variable_player:
+  abc_lanes_shots_hit:
+    score: 2_000
+  mode_abc_started:
+    pf_multiplier:
+      int: 1
+      action: set
+  abc_lanes_shots_done{count==2}:
+    pf_multiplier:
+      int: 2
+      action: set
+  abc_lanes_shots_done{count==3}:
+    pf_multiplier:
+      int: 3
+      action: set
+  abc_lanes_shots_done{count==4}:
+    pf_multiplier:
+      int: 4
+      action: set
+  abc_lanes_shots_done{count==5}:
+    pf_multiplier:
+      int: 5
+      action: set
+  abc_lanes_shots_done{count==6}:
+    pf_multiplier:
+      int: 10
+      action: set
+  abc_lanes_shots_complete:
+    score: 10_000 * current_player.pf_multiplier

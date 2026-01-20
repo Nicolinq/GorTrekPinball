@@ -5,7 +5,7 @@ hardware:
    driverboards: gen2
 
 opp:
-   ports: com3, com4 # change if your Cobra board uses different ports
+   ports: /dev/ttyACM0, /dev/ttyACM1
 
 config:
 - hardware.yaml
@@ -14,7 +14,7 @@ modes:
 - attract
 - base
 - bumpers
-- hurryup
+- abc
 
 
 named_colors:
