@@ -41,7 +41,7 @@ comma_separate = true
 min_digits = 2
 metadata/_custom_type_script = "uid://bfvhmv2eirpua"
 
-[node name="MarginContainer" type="MarginContainer" parent="."]
+[node name="BottomMarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
 anchors_preset = 12
 anchor_top = 1.0
@@ -54,11 +54,11 @@ theme_override_constants/margin_left = 40
 theme_override_constants/margin_top = 40
 theme_override_constants/margin_bottom = 40
 
-[node name="HFlowContainer" type="HFlowContainer" parent="MarginContainer"]
+[node name="HFlowContainer" type="HFlowContainer" parent="BottomMarginContainer"]
 layout_mode = 2
 theme_override_constants/h_separation = 30
 
-[node name="player_number" type="Label" parent="MarginContainer/HFlowContainer"]
+[node name="player_number" type="Label" parent="BottomMarginContainer/HFlowContainer"]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.95686275, 0.12156863, 0.9098039, 1)
 theme_override_constants/outline_size = 10
@@ -71,7 +71,7 @@ template_string = "PLAYER %s"
 min_players = 2
 metadata/_custom_type_script = "uid://bfvhmv2eirpua"
 
-[node name="player_ball" type="Label" parent="MarginContainer/HFlowContainer"]
+[node name="player_ball" type="Label" parent="BottomMarginContainer/HFlowContainer"]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.95686275, 0.12156863, 0.9098039, 1)
 theme_override_constants/outline_size = 10
@@ -81,4 +81,28 @@ text = "BALL 1"
 script = ExtResource("2_2jp88")
 variable_name = "ball"
 template_string = "Ball %s"
+metadata/_custom_type_script = "uid://bfvhmv2eirpua"
+
+[node name="TopMarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+grow_horizontal = 2
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = 40
+theme_override_constants/margin_right = 40
+
+[node name="HFlowContainer" type="HFlowContainer" parent="TopMarginContainer"]
+layout_mode = 2
+theme_override_constants/h_separation = 30
+
+[node name="playfield_multi" type="Label" parent="TopMarginContainer/HFlowContainer"]
+layout_mode = 2
+theme_override_constants/outline_size = 10
+theme_override_constants/shadow_outline_size = 10
+theme_override_font_sizes/font_size = 60
+text = "PLAYFIELD *2"
+script = ExtResource("2_2jp88")
+variable_name = "pf_multiplier"
+template_string = "PLAYFIELD * %s"
 metadata/_custom_type_script = "uid://bfvhmv2eirpua"
