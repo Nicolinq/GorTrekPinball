@@ -67,7 +67,7 @@ theme_override_font_sizes/font_size = 60
 text = "PLAYER 1"
 script = ExtResource("2_2jp88")
 variable_name = "number"
-template_string = "PLAYER %s"
+template_string = "Player %s"
 min_players = 1
 metadata/_custom_type_script = "uid://bfvhmv2eirpua"
 
@@ -102,7 +102,7 @@ layout_mode = 2
 theme_override_constants/outline_size = 10
 theme_override_constants/shadow_outline_size = 10
 theme_override_font_sizes/font_size = 60
-text = "BONUS X"
+text = "Bonus x"
 horizontal_alignment = 1
 vertical_alignment = 1
 

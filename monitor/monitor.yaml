@@ -1,3 +1,4 @@
+device_size: 0.02
 light:
   l_Led_2X:
     x: 0.33673469387755106
