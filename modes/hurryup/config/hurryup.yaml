@@ -3,7 +3,7 @@
 mode:
   start_events: start_mode_hurryup
   stop_events: stop_mode_hurryup
-  priority: 1000
+  priority: 100
 
 event_player:
   timer_hurryup_timer_complete : stop_mode_hurryup

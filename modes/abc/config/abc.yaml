@@ -3,7 +3,7 @@
 mode:
   start_events: start_mode_abc
   stop_events: stop_mode_abc
-  priority: 200
+  priority: 50
 
 shows:
   Playfield_2x_on:
