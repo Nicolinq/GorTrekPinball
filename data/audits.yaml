@@ -1,48 +1,48 @@
 events:
   game_ended: 7
-  game_started: 113
+  game_started: 114
 missing_switches:
-  s_1_target: 45
-  s_2_target: 44
-  s_3_target: 44
-  s_4_target: 44
-  s_a_drop_target: 65
-  s_bottom_bumper: 9
-  s_bottom_bumper_spe: 49
-  s_d_rollover: 44
-  s_e_rollover: 44
-  s_eject_hole: 49
-  s_g2_drop_target: 65
-  s_g_drop_target: 65
-  s_gar_drop_targets_series: 65
-  s_gar_drop_targets_standup: 65
-  s_gor_drop_target_Standup: 65
-  s_gor_drop_targets_series: 65
-  s_left_bumper: 9
-  s_left_bumper_spe: 51
-  s_left_flipper: 7
-  s_left_kicker: 45
-  s_left_outlane: 56
-  s_left_sling_spe: 44
-  s_lower_left_standup: 65
-  s_magnet_switch: 47
-  s_middle_left_standup: 65
-  s_middle_lower_standup: 65
-  s_middle_upper_standup: 65
-  s_o_drop_target: 65
-  s_outhole: 44
-  s_playfield_tilt: 65
-  s_r2_drop_target: 65
-  s_r_drop_target: 65
-  s_right_bumper_spe: 47
-  s_right_flipper: 5
-  s_right_kicker: 49
-  s_right_outlane: 44
-  s_right_sling_spe: 65
-  s_spinner: 65
-  s_startButton: 10
-  s_top_bumper: 49
-  s_upper_left_standup: 65
+  s_1_target: 46
+  s_2_target: 45
+  s_3_target: 45
+  s_4_target: 45
+  s_a_drop_target: 66
+  s_bottom_bumper: 10
+  s_bottom_bumper_spe: 50
+  s_c_rollover: 1
+  s_d_rollover: 45
+  s_e_rollover: 45
+  s_eject_hole: 50
+  s_g2_drop_target: 66
+  s_g_drop_target: 66
+  s_gar_drop_targets_series: 66
+  s_gar_drop_targets_standup: 66
+  s_gor_drop_target_Standup: 66
+  s_gor_drop_targets_series: 66
+  s_left_bumper: 10
+  s_left_bumper_spe: 52
+  s_left_flipper: 8
+  s_left_kicker: 46
+  s_left_outlane: 57
+  s_left_sling_spe: 45
+  s_lower_left_standup: 66
+  s_magnet_switch: 48
+  s_middle_left_standup: 66
+  s_middle_lower_standup: 66
+  s_middle_upper_standup: 66
+  s_o_drop_target: 66
+  s_outhole: 45
+  s_playfield_tilt: 66
+  s_r2_drop_target: 66
+  s_r_drop_target: 66
+  s_right_bumper_spe: 48
+  s_right_flipper: 6
+  s_right_kicker: 50
+  s_right_outlane: 45
+  s_right_sling_spe: 66
+  s_spinner: 66
+  s_top_bumper: 50
+  s_upper_left_standup: 66
 player:
   score:
     average: 38142
@@ -56,8 +56,8 @@ player:
     - 0
     total: 7
 shots:
-  a_lane: 68
-  b_lane: 64
+  a_lane: 69
+  b_lane: 65
   bumper_bottom: 49
   bumper_left: 49
   bumper_top: 11
@@ -72,8 +72,8 @@ switches:
   s_3_target: 59
   s_4_target: 46
   s_a_drop_target: 0
-  s_a_rollover: 81
-  s_b_rollover: 95
+  s_a_rollover: 82
+  s_b_rollover: 96
   s_bottom_bumper: 84
   s_bottom_bumper_spe: 40
   s_c_rollover: 98
@@ -108,6 +108,6 @@ switches:
   s_right_outlane: 28
   s_right_sling_spe: 31
   s_spinner: 28
-  s_startButton: 84
+  s_startButton: 85
   s_top_bumper: 70
   s_upper_left_standup: 2
