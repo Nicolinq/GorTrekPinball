@@ -23,6 +23,16 @@ shots:
 slide_player:
    mode_base_started: base_slide
    
+light_player:
+   player_bonus_multiplier{value == 2}:
+      l_Led_2X: on
+   player_bonus_multiplier{value == 3}:
+      l_Led_3X: on
+   player_bonus_multiplier{value == 4}:
+      l_Led_Star_1: on
+   player_bonus_multiplier{value == 5}:
+      l_Led_Star_2: on
+
 
 variable_player:
    mode_base_started:
@@ -30,58 +40,86 @@ variable_player:
          int: 1
          action: set
    s_left_outlane_active:
-      score: 1000
+      score: 1_000
+      bonus_subtotal: 1_000
    s_d_rollover_active:
-      score: 1000
+      score: 1_000
+      base_bonus: 1_000
    s_left_kicker_active:
-      score: 1000
+      score: 1_000
+      base_bonus: 1_000
    s_lower_left_standup_active:
-      score: 1000
+      score: 1_000
+      base_bonus: 1_000
    s_1_target_active:
-      score: 1000
+      score: 1_000
+      base_bonus: 1_000
    s_eject_hole_active:
-      score: 1000
+      score: 1_000
+      base_bonus: 1_000
    s_middle_left_standup_active:
-      score: 1000
+      score: 1_000
+      base_bonus: 1_000
    s_upper_left_standup_active:
-      score: 1000
+      score: 1_000
+      base_bonus: 1_000
    s_g_drop_target_active:
-      score: 1000
+      score: 1_000
+      base_bonus: 1_000
    s_o_drop_target_active:
-      score: 1000
+      score: 1_000
+      base_bonus: 1_000
    s_r_drop_target_active:
-      score: 1000
+      score: 1_000
+      base_bonus: 1_000
    s_gor_drop_targets_series_active:
-      score: 1000
+      score: 1_000
+      base_bonus: 1_000
    s_gor_drop_target_Standup_active:
-      score: 1000
+      score: 1_000
+      base_bonus: 1_000
    s_magnet_switch_active:
-      score: 1000
+      score: 1_000
+      base_bonus: 1_000
    s_middle_lower_standup_active:
-      score: 1000
+      score: 1_000
+      base_bonus: 1_000
    s_middle_upper_standup_active:
-      score: 1000
+      score: 1_000
+      base_bonus: 1_000
    s_spinner_active:
-      score: 1000
+      score: 1_000
+      base_bonus: 1_000
    s_2_target_active:
-      score: 1000
+      score: 1_000
+      base_bonus: 1_000
    s_3_target_active:
-      score: 1000
+      score: 1_000
+      base_bonus: 1_000
    s_4_target_active:
-      score: 1000
+      score: 1_000
+      base_bonus: 1_000
    s_right_outlane_active:
-      score: 1000
+      score: 1_000
+      base_bonus: 1_000
    s_e_rollover_active:
-      score: 1000
+      score: 1_000
+      base_bonus: 1_000
    s_right_kicker_active:
-      score: 1000
+      score: 1_000
+      base_bonus: 1_000
    s_gar_drop_targets_standup_active:
-      score: 1000
+      score: 1_000
+      base_bonus: 1_000
    s_g2_drop_target_active:
-      score: 1000
+      score: 1_000
+      base_bonus: 1_000
    s_a_drop_target_active:
-      score: 1000
+      score: 1_000
+      base_bonus: 1_000
    s_r2_drop_target_active:
-      score: 1000
+      score: 1_000
+      base_bonus: 1_000
    s_gar_drop_targets_series_active:
-      score: 1000
+      score: 1_000
+      base_bonus: 1_000

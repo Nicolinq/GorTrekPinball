@@ -10,6 +10,10 @@ opp:
 config:
 - hardware.yaml
 
+player_vars:
+  bonus_multiplier:
+    initial_value: 1
+
 modes:
 - attract
 - base

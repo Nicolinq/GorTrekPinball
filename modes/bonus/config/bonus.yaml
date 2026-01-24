@@ -1,9 +1,10 @@
 #config_version=6
 
 mode:
-  start_events: start_mode_bonus
-  stop_events: stop_mode_bonus
-  priority: 50
+  start_events: ball_ending
+  priority: 500
+  use_wait_queue: true
+
 
 mode_settings:
     bonus_entries:
@@ -13,6 +14,16 @@ mode_settings:
           score: 1_000
           reset_player_score_entry: true
 
+### event players ####
+## bonus lights
+light_player:
+  player_base_bonus{value == 1_000}:
+    l_Led_Bonus_1: on
+  player_base_bonus{value == 2_000}:
+    l_Led_Bonus_2: on
+
+
+  
 slide_player:
   mode_bonus_started: bonus
   bonus_start:
@@ -24,3 +35,8 @@ slide_player:
     bonus:
       action: update
    
+variable_player:
+  mode_bonus_will_stop:
+    base_bonus:
+      int: 0
+      action: set

@@ -51,6 +51,7 @@ shot_groups:
 variable_player:
   abc_lanes_shots_hit:
     score: 2_000
+    bonus_subtotal: 1_000
   mode_abc_started:
     bonus_multiplier:
       int: 1
@@ -82,19 +83,3 @@ show_player:
       speed: 4
       show_tokens:
         lights: l_Led_A, l_Led_B, l_Led_C, l_Led_2X, l_Led_3X, l_Led_Star_1, l_Led_Star_2
-  abc_lanes_shots_done{count==2}:
-    on:
-      show_tokens:
-        lights: l_Led_2X
-  abc_lanes_shots_done{count==3}:
-    on:
-      show_tokens:
-        lights: l_Led_2X, l_Led_3X
-  abc_lanes_shots_done{count==4}:
-    on:
-      show_tokens:
-        lights: l_Led_2X, l_Led_3X, l_Led_Star_1
-  abc_lanes_shots_done{count>=5}:
-    on:
-      show_tokens:
-        lights: l_Led_2X, l_Led_3X, l_Led_Star_1, l_Led_Star_2

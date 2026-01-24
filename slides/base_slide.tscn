@@ -97,25 +97,28 @@ theme_override_constants/margin_right = 40
 layout_mode = 2
 theme_override_constants/h_separation = 40
 
-[node name="Label" type="Label" parent="TopMarginContainer/VFlowContainer"]
+[node name="bonus" type="Label" parent="TopMarginContainer/VFlowContainer"]
 layout_mode = 2
+theme_override_colors/font_color = Color(0.95478195, 0.39243633, 0.21187225, 1)
 theme_override_constants/outline_size = 10
 theme_override_constants/shadow_outline_size = 10
 theme_override_font_sizes/font_size = 60
-text = "Bonus x"
-horizontal_alignment = 1
-vertical_alignment = 1
+text = "Base Bonus 1,000"
+script = ExtResource("2_2jp88")
+variable_name = "base_bonus"
+comma_separate = true
+template_string = "Base Bonus %s"
+metadata/_custom_type_script = "uid://bfvhmv2eirpua"
 
 [node name="playfield_multi" type="Label" parent="TopMarginContainer/VFlowContainer"]
 layout_mode = 2
+theme_override_colors/font_color = Color(0.95478195, 0.39243633, 0.21187225, 1)
 theme_override_constants/outline_size = 10
 theme_override_constants/shadow_outline_size = 10
 theme_override_font_sizes/font_size = 60
-text = "2"
-horizontal_alignment = 1
-vertical_alignment = 1
+text = "Bonus x2"
 script = ExtResource("2_2jp88")
 variable_name = "bonus_multiplier"
-min_digits = 0
-template_string = "%s"
+comma_separate = true
+template_string = "Bonus x%s"
 metadata/_custom_type_script = "uid://bfvhmv2eirpua"
