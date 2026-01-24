@@ -1,0 +1,87 @@
+[gd_scene load_steps=4 format=3 uid="uid://bma8gj2vk3r2e"]
+
+[ext_resource type="Script" uid="uid://dru3usokwlhd3" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_4xgho"]
+[ext_resource type="Script" uid="uid://808knhb8e2nn" path="res://addons/mpf-gmc/classes/mpf_conditional_children.gd" id="2_5bwht"]
+[ext_resource type="Script" uid="uid://bfvhmv2eirpua" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="3_d5wm8"]
+
+[node name="Bonus" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1280.0
+offset_bottom = 1024.0
+script = ExtResource("1_4xgho")
+metadata/_custom_type_script = "uid://dru3usokwlhd3"
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.9869711, 0.7092198, 0.37070882, 1)
+
+[node name="BottomMarginContainer" type="MarginContainer" parent="ColorRect"]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -123.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = 40
+theme_override_constants/margin_bottom = 40
+
+[node name="HFlowContainer" type="HFlowContainer" parent="ColorRect/BottomMarginContainer"]
+layout_mode = 2
+theme_override_constants/h_separation = 30
+
+[node name="MPFConditionalChildren" type="Control" parent="ColorRect/BottomMarginContainer/HFlowContainer"]
+layout_mode = 2
+script = ExtResource("2_5bwht")
+variable_type = 1
+variable_name = "entry"
+metadata/_custom_type_script = "uid://808knhb8e2nn"
+
+[node name="initial" type="Node2D" parent="ColorRect/BottomMarginContainer/HFlowContainer/MPFConditionalChildren"]
+
+[node name="MPFVariable" type="Label" parent="ColorRect/BottomMarginContainer/HFlowContainer/MPFConditionalChildren/initial"]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 545.0
+offset_bottom = 110.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 80
+text = "\"End of Ball 1\""
+script = ExtResource("3_d5wm8")
+variable_name = "ball"
+template_string = "End of Ball %s"
+metadata/_custom_type_script = "uid://bfvhmv2eirpua"
+
+[node name="__default__" type="Node2D" parent="ColorRect/BottomMarginContainer/HFlowContainer/MPFConditionalChildren"]
+
+[node name="text" type="Label" parent="ColorRect/BottomMarginContainer/HFlowContainer/MPFConditionalChildren/__default__"]
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_font_sizes/font_size = 80
+text = "Bonus Entry Text\""
+script = ExtResource("3_d5wm8")
+variable_type = 1
+variable_name = "text"
+metadata/_custom_type_script = "uid://bfvhmv2eirpua"
+
+[node name="score" type="Label" parent="ColorRect/BottomMarginContainer/HFlowContainer/MPFConditionalChildren/__default__"]
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_font_sizes/font_size = 80
+text = "1,000,000"
+script = ExtResource("3_d5wm8")
+variable_type = 1
+variable_name = "score"
+comma_separate = true
+metadata/_custom_type_script = "uid://bfvhmv2eirpua"
