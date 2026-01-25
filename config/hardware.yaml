@@ -303,62 +303,62 @@ lights:
         previous: l_Led_3X #number: 0-0-19
         type: grb
         subtype: led
-        tags: inserts
+        tags: inserts, inserts_bonus
     l_Led_Bonus_2:
         previous: l_Led_Bonus_1 #number: 0-0-20
         type: grb
         subtype: led
-        tags: inserts
+        tags: inserts, inserts_bonus
     l_Led_Bonus_3:
         previous: l_Led_Bonus_2 #number: 0-0-21
         type: grb
         subtype: led
-        tags: inserts
+        tags: inserts, inserts_bonus
     l_Led_Bonus_4:
         previous: l_Led_Bonus_3 #number: 0-0-22
         type: grb
         subtype: led
-        tags: inserts
+        tags: inserts, inserts_bonus
     l_Led_Bonus_20:
         previous: l_Led_Bonus_4 #number: 0-0-23
         type: grb
         subtype: led
-        tags: inserts
+        tags: inserts, inserts_bonus
     l_Led_Bonus_5:
         previous: l_Led_Bonus_20 #number: 0-0-24
         type: grb
         subtype: led
-        tags: inserts   
+        tags: inserts, inserts_bonus
     l_Led_Bonus_6:
         previous: l_Led_Bonus_5 #number: 0-0-25
         type: grb
         subtype: led
-        tags: inserts  
+        tags: inserts, inserts_bonus 
     l_Led_Bonus_7:
         previous: l_Led_Bonus_6 #number: 0-0-26
         type: grb
         subtype: led
-        tags: inserts  
+        tags: inserts, inserts_bonus  
     l_Led_Bonus_8:
         previous: l_Led_Bonus_7 #number: 0-0-27
         type: grb
         subtype: led
-        tags: inserts  
+        tags: inserts, inserts_bonus  
     l_Led_Bonus_9:
         previous: l_Led_Bonus_8 #number: 0-0-28
         type: grb
         subtype: led
-        tags: inserts  
+        tags: inserts, inserts_bonus  
     l_Led_Bonus_10:
         previous: l_Led_Bonus_9 #number: 0-0-29
         type: grb
         subtype: led
-        tags: inserts  
+        tags: inserts, inserts_bonus  
     l_Led_Star_1:
         previous: l_Led_Bonus_10 #number: 0-0-30
         type: grb
         subtype: led
-        tags: inserts  
+        tags: inserts, inserts_bonus  
     l_Led_Shoot_Again:
         previous: l_Led_Star_1 #number: 0-0-31
         type: grb

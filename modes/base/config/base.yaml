@@ -15,6 +15,7 @@ event_player:
    left_lane_hit:
       - start_mode_hurryup
 
+
 shots:
    left_lane:
       switches: s_d_rollover
@@ -24,6 +25,7 @@ slide_player:
    mode_base_started: base_slide
    
 light_player:
+   #bonus multiplier
    player_bonus_multiplier{value == 2}:
       l_Led_2X: on
    player_bonus_multiplier{value == 3}:
@@ -32,16 +34,85 @@ light_player:
       l_Led_Star_1: on
    player_bonus_multiplier{value == 5}:
       l_Led_Star_2: on
-
+   #bonus lights
+   player_base_bonus{value == 1_000}:
+    l_Led_Bonus_1: on
+   player_base_bonus{value == 2_000}:
+    l_Led_Bonus_2: on
+   player_base_bonus{value == 3_000}:
+    l_Led_Bonus_3: on
+   player_base_bonus{value == 4_000}:
+    l_Led_Bonus_4: on
+   player_base_bonus{value == 5_000}:
+    l_Led_Bonus_5: on
+   player_base_bonus{value == 6_000}:
+    l_Led_Bonus_6: on
+   player_base_bonus{value == 7_000}:
+    l_Led_Bonus_7: on
+   player_base_bonus{value == 8_000}:
+    l_Led_Bonus_8: on
+   player_base_bonus{value == 9_000}:
+    l_Led_Bonus_9: on
+   player_base_bonus{value == 10_000}:
+    l_Led_Bonus_10: on
+   player_base_bonus{value == 11_000}:
+    inserts_bonus: off
+    l_Led_Bonus_1: on
+    l_Led_Bonus_10: on
+   player_base_bonus{value == 12_000}:
+    l_Led_Bonus_2: on
+   player_base_bonus{value == 13_000}:
+    l_Led_Bonus_3: on
+   player_base_bonus{value == 14_000}:
+    l_Led_Bonus_4: on
+   player_base_bonus{value == 15_000}:
+    l_Led_Bonus_5: on
+   player_base_bonus{value == 16_000}:
+    l_Led_Bonus_6: on
+   player_base_bonus{value == 17_000}:
+    l_Led_Bonus_7: on
+   player_base_bonus{value == 18_000}:
+    l_Led_Bonus_8: on
+   player_base_bonus{value == 19_000}:
+    l_Led_Bonus_9: on
+   player_base_bonus{value == 20_000}:
+    l_Led_Bonus_20: on
+   player_base_bonus{value == 21_000}:
+    inserts_bonus: off
+    l_Led_Bonus_1: on
+    l_Led_Bonus_20: on
+   player_base_bonus{value == 22_000}:
+    l_Led_Bonus_2: on
+   player_base_bonus{value == 23_000}:
+    l_Led_Bonus_3: on
+   player_base_bonus{value == 24_000}:
+    l_Led_Bonus_4: on
+   player_base_bonus{value == 25_000}:
+    l_Led_Bonus_5: on
+   player_base_bonus{value == 26_000}:
+    l_Led_Bonus_6: on
+   player_base_bonus{value == 27_000}:
+    l_Led_Bonus_7: on
+   player_base_bonus{value == 28_000}:
+    l_Led_Bonus_8: on
+   player_base_bonus{value == 29_000}:
+    l_Led_Bonus_9: on
+   player_base_bonus{value >= 30_000}:
+      inserts_bonus: off
+      l_Led_Bonus_10: on
+      l_Led_Bonus_20: on
 
 variable_player:
    mode_base_started:
       bonus_multiplier:
          int: 1
          action: set
+      base_bonus: 
+         int: 0
+         action: set
    s_left_outlane_active:
       score: 1_000
-      bonus_subtotal: 1_000
+      base_bonus: 1_000
    s_d_rollover_active:
       score: 1_000
       base_bonus: 1_000

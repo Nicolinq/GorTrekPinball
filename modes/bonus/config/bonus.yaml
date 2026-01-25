@@ -8,20 +8,11 @@ mode:
 
 mode_settings:
     bonus_entries:
-        - entry: simple_bonus
-          text: "Simple Bonus"
+        - entry: bonus_abc
+          text: "Bonus ABC"
           player_score_entry: current_player.bonus_multiplier
-          score: 1_000
+          score: current_player.base_bonus
           reset_player_score_entry: true
-
-### event players ####
-## bonus lights
-light_player:
-  player_base_bonus{value == 1_000}:
-    l_Led_Bonus_1: on
-  player_base_bonus{value == 2_000}:
-    l_Led_Bonus_2: on
-
 
   
 slide_player:
@@ -35,8 +26,8 @@ slide_player:
     bonus:
       action: update
    
-variable_player:
-  mode_bonus_will_stop:
-    base_bonus:
-      int: 0
-      action: set
+# variable_player:
+#   mode_bonus_will_stop:
+#     base_bonus:
+#       int: 0
+#       action: set

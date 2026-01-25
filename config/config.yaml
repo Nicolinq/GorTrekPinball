@@ -13,6 +13,8 @@ config:
 player_vars:
   bonus_multiplier:
     initial_value: 1
+  base_bonus:
+    initial_value: 0
 
 modes:
 - attract
