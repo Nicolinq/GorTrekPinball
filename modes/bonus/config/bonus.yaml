@@ -1,18 +1,28 @@
 #config_version=6
-
 mode:
   start_events: ball_ending
   priority: 500
-  use_wait_queue: true
+  # use_wait_queue: true
 
+
+# mode_settings:
+#   display_delay_ms: 1000ms
+#   hurry_up_delay_ms: 200ms
+#   rounding_value: 100
+#   rounding_direction: up
+#   bonus_entries:
+#     - event: bonus_reputation
+#       score: machine.base_points // 1000 * (current_player.reputation + current_player.paragon + current_player.renegade)
 
 mode_settings:
-    bonus_entries:
-        - entry: bonus_abc
-          text: "Bonus ABC"
-          player_score_entry: current_player.bonus_multiplier
-          score: current_player.base_bonus
-          reset_player_score_entry: true
+  display_delay_ms: 1000ms
+  hurry_up_delay_ms: 200ms
+  bonus_entries:
+    - entry: end_ball_bonus
+      text: "End Of Ball Bonus"
+#      score: current_player.base_bonus * current_player.bonus_multiplier
+      score: current_player.base_bonus
+      skip_if_zero: False
 
   
 slide_player:
@@ -26,8 +36,8 @@ slide_player:
     bonus:
       action: update
    
-# variable_player:
-#   mode_bonus_will_stop:
-#     base_bonus:
-#       int: 0
-#       action: set
+variable_player:
+  mode_bonus_will_stop:
+    base_bonus:
+      int: 0
+      action: set

@@ -19,10 +19,11 @@ player_vars:
 modes:
 - attract
 - base
+- bonus
 - bumpers
 - abc
 - hurryup
-- bonus
+
 
 
 named_colors:

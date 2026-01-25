@@ -428,17 +428,17 @@ light_player:
         color: slateblue
         fade: 2000ms
 
-keyboard:
-   1:
-     event: led_off
-   2:
-     event: led_code
-   3:
-     event: led_name
-   4:
-     event: group_light
-   5:
-     event: led_fade
+# keyboard:
+#    1:
+#      event: led_off
+#    2:
+#      event: led_code
+#    3:
+#      event: led_name
+#    4:
+#      event: group_light
+#    5:
+#      event: led_fade
      
 ball_devices:
     bd_trough:
@@ -470,4 +470,4 @@ machine:
 
 game:
     balls_per_game: 3
-    max_players: 1
+    max_players: 4

@@ -107,9 +107,6 @@ variable_player:
       bonus_multiplier:
          int: 1
          action: set
-      base_bonus: 
-         int: 0
-         action: set
    s_left_outlane_active:
       score: 1_000
       base_bonus: 1_000

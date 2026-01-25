@@ -43,7 +43,7 @@ shot_groups:
   abc_lanes_shots:
     shots: a_lane,b_lane,c_lane
     reset_events: 
-      abc_lanes_shots_hit_complete : 3s
+      abc_lanes_shots_hit_complete : 2s
     rotate_left_events: s_left_flipper_active
     rotate_right_events: s_right_flipper_active
 

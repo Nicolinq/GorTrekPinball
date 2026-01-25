@@ -21,7 +21,7 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.9869711, 0.7092198, 0.37070882, 1)
 
-[node name="MPFConditionalChildren" type="Control" parent="ColorRect"]
+[node name="MPFConditionalChildren" type="Control" parent="."]
 layout_mode = 1
 anchors_preset = 12
 anchor_top = 1.0
@@ -34,9 +34,9 @@ variable_type = 1
 variable_name = "entry"
 metadata/_custom_type_script = "uid://808knhb8e2nn"
 
-[node name="initial" type="Node2D" parent="ColorRect/MPFConditionalChildren"]
+[node name="initial" type="Node2D" parent="MPFConditionalChildren"]
 
-[node name="MPFVariable" type="Label" parent="ColorRect/MPFConditionalChildren/initial"]
+[node name="MPFVariable" type="Label" parent="MPFConditionalChildren/initial"]
 anchors_preset = 12
 anchor_top = 1.0
 anchor_right = 1.0
@@ -56,9 +56,9 @@ variable_name = "ball"
 template_string = "End of Ball %s"
 metadata/_custom_type_script = "uid://bfvhmv2eirpua"
 
-[node name="__default__" type="Node2D" parent="ColorRect/MPFConditionalChildren"]
+[node name="__default__" type="Node2D" parent="MPFConditionalChildren"]
 
-[node name="HFlowContainer" type="HFlowContainer" parent="ColorRect/MPFConditionalChildren/__default__"]
+[node name="HFlowContainer" type="HFlowContainer" parent="MPFConditionalChildren/__default__"]
 anchors_preset = 12
 anchor_top = 1.0
 anchor_right = 1.0
@@ -73,7 +73,7 @@ theme_override_constants/h_separation = 40
 theme_override_constants/v_separation = 40
 alignment = 1
 
-[node name="text" type="Label" parent="ColorRect/MPFConditionalChildren/__default__/HFlowContainer"]
+[node name="text" type="Label" parent="MPFConditionalChildren/__default__/HFlowContainer"]
 layout_mode = 2
 theme_override_constants/outline_size = 10
 theme_override_constants/shadow_outline_size = 10
@@ -86,7 +86,7 @@ variable_type = 1
 variable_name = "text"
 metadata/_custom_type_script = "uid://bfvhmv2eirpua"
 
-[node name="score" type="Label" parent="ColorRect/MPFConditionalChildren/__default__/HFlowContainer"]
+[node name="score" type="Label" parent="MPFConditionalChildren/__default__/HFlowContainer"]
 layout_mode = 2
 theme_override_constants/outline_size = 10
 theme_override_constants/shadow_outline_size = 10
@@ -98,9 +98,9 @@ variable_name = "score"
 comma_separate = true
 metadata/_custom_type_script = "uid://bfvhmv2eirpua"
 
-[node name="subtotal" type="Node2D" parent="ColorRect/MPFConditionalChildren"]
+[node name="subtotal" type="Node2D" parent="MPFConditionalChildren"]
 
-[node name="HFlowContainer" type="HFlowContainer" parent="ColorRect/MPFConditionalChildren/subtotal"]
+[node name="HFlowContainer" type="HFlowContainer" parent="MPFConditionalChildren/subtotal"]
 anchors_preset = 12
 anchor_top = 1.0
 anchor_right = 1.0
@@ -115,7 +115,7 @@ theme_override_constants/h_separation = 40
 theme_override_constants/v_separation = 40
 alignment = 1
 
-[node name="Label" type="Label" parent="ColorRect/MPFConditionalChildren/subtotal/HFlowContainer"]
+[node name="Label" type="Label" parent="MPFConditionalChildren/subtotal/HFlowContainer"]
 layout_mode = 2
 theme_override_constants/outline_size = 10
 theme_override_constants/shadow_outline_size = 10
@@ -123,7 +123,7 @@ theme_override_font_sizes/font_size = 80
 text = "Bonus Subtotal"
 metadata/_custom_type_script = "uid://bfvhmv2eirpua"
 
-[node name="score" type="Label" parent="ColorRect/MPFConditionalChildren/subtotal/HFlowContainer"]
+[node name="score" type="Label" parent="MPFConditionalChildren/subtotal/HFlowContainer"]
 layout_mode = 2
 theme_override_constants/outline_size = 10
 theme_override_constants/shadow_outline_size = 10
@@ -133,11 +133,12 @@ script = ExtResource("3_d5wm8")
 variable_type = 1
 variable_name = "score"
 comma_separate = true
+initialize_empty = false
 metadata/_custom_type_script = "uid://bfvhmv2eirpua"
 
-[node name="total" type="Node2D" parent="ColorRect/MPFConditionalChildren"]
+[node name="total" type="Node2D" parent="MPFConditionalChildren"]
 
-[node name="HFlowContainer" type="HFlowContainer" parent="ColorRect/MPFConditionalChildren/total"]
+[node name="HFlowContainer" type="HFlowContainer" parent="MPFConditionalChildren/total"]
 anchors_preset = 12
 anchor_top = 1.0
 anchor_right = 1.0
@@ -152,7 +153,7 @@ theme_override_constants/h_separation = 40
 theme_override_constants/v_separation = 40
 alignment = 1
 
-[node name="Label" type="Label" parent="ColorRect/MPFConditionalChildren/total/HFlowContainer"]
+[node name="Label" type="Label" parent="MPFConditionalChildren/total/HFlowContainer"]
 layout_mode = 2
 theme_override_constants/outline_size = 10
 theme_override_constants/shadow_outline_size = 10
@@ -160,7 +161,7 @@ theme_override_font_sizes/font_size = 80
 text = "Total Bonus"
 metadata/_custom_type_script = "uid://bfvhmv2eirpua"
 
-[node name="score" type="Label" parent="ColorRect/MPFConditionalChildren/total/HFlowContainer"]
+[node name="score" type="Label" parent="MPFConditionalChildren/total/HFlowContainer"]
 layout_mode = 2
 theme_override_constants/outline_size = 10
 theme_override_constants/shadow_outline_size = 10
@@ -170,11 +171,12 @@ script = ExtResource("3_d5wm8")
 variable_type = 1
 variable_name = "score"
 comma_separate = true
+initialize_empty = false
 metadata/_custom_type_script = "uid://bfvhmv2eirpua"
 
-[node name="multiplier" type="Node2D" parent="ColorRect/MPFConditionalChildren"]
+[node name="multiplier" type="Node2D" parent="MPFConditionalChildren"]
 
-[node name="HFlowContainer" type="HFlowContainer" parent="ColorRect/MPFConditionalChildren/multiplier"]
+[node name="HFlowContainer" type="HFlowContainer" parent="MPFConditionalChildren/multiplier"]
 anchors_preset = 12
 anchor_top = 1.0
 anchor_right = 1.0
@@ -189,7 +191,7 @@ theme_override_constants/h_separation = 40
 theme_override_constants/v_separation = 40
 alignment = 1
 
-[node name="Label" type="Label" parent="ColorRect/MPFConditionalChildren/multiplier/HFlowContainer"]
+[node name="Label" type="Label" parent="MPFConditionalChildren/multiplier/HFlowContainer"]
 layout_mode = 2
 theme_override_constants/outline_size = 10
 theme_override_constants/shadow_outline_size = 10
@@ -197,7 +199,7 @@ theme_override_font_sizes/font_size = 80
 text = "Bonus Multiplier"
 metadata/_custom_type_script = "uid://bfvhmv2eirpua"
 
-[node name="score" type="Label" parent="ColorRect/MPFConditionalChildren/multiplier/HFlowContainer"]
+[node name="score" type="Label" parent="MPFConditionalChildren/multiplier/HFlowContainer"]
 layout_mode = 2
 theme_override_constants/outline_size = 10
 theme_override_constants/shadow_outline_size = 10
@@ -207,4 +209,5 @@ script = ExtResource("3_d5wm8")
 variable_type = 1
 variable_name = "score"
 template_string = "%sX"
+initialize_empty = false
 metadata/_custom_type_script = "uid://bfvhmv2eirpua"
